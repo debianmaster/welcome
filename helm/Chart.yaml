@@ -1,7 +1,0 @@
-apiVersion: v2
-name: docker_web_app
-version: 1.0.0
-
-# A Helm chart for Kubernetes
-
-description: A Helm chart for deploying docker_web_app
