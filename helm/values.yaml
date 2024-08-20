@@ -1,7 +1,0 @@
-replicaCount: 1
-image:
-  repository: docker.io/zelarsoftdev/welcome
-  tag: latest
-service:
-  type: ClusterIP
-  port: 6566
