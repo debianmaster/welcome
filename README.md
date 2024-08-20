@@ -1,7 +1,2 @@
-Dockerfile
-README.md
-azure-pipelines.yml
-k8s
-package-lock.json
-package.json
-server.js
+This is api written in nodejs running on port 8080
+startup command is `npm start`
