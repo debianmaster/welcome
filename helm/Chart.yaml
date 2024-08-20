@@ -1,0 +1,5 @@
+apiVersion: v2
+name: docker_web_app
+version: 1.0.0
+
+# This is a Kubernetes Helm Chart for deploying a Node.js application.
