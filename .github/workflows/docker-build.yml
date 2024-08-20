@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - demo
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Log in to Docker Hub
+      run: echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
+
+    - name: Build Docker image
+      run: podman build --arch=x86_64 -t zelarsoftdev/welcome:latest .
+
+    - name: Push to Docker Hub
+      run: podman push zelarsoftdev/welcome:latest
