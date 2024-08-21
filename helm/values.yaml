@@ -1,4 +1,0 @@
-image:
-  repository: YOUR_DOCKER_HUB_USERNAME/welcome
-  tag: latest
-port: 6566
